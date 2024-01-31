@@ -2,13 +2,16 @@
 
 body {
     background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif; /* Dodano domyślną czcionkę dla całej strony */
 }
 
 .navbar {
     background-color: #343a40;
+    color: #ffffff; /* Dodano kolor tekstu dla kontrastu */
 }
 
-.navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
     color: #ffffff;
 }
 
@@ -21,12 +24,14 @@ body {
     padding-top: 60px;
     position: relative;
     z-index: 1;
+    color: #ffffff; /* Dodano kolor tekstu dla kontrastu */
 }
 
 .second-background {
     background-color: #ffffff;
     position: relative;
     z-index: 0;
+    color: #343a40; /* Dodano kolor tekstu dla kontrastu */
 }
 
 .section-heading {
@@ -40,4 +45,43 @@ body {
 .footer {
     background-color: #343a40;
     color: #ffffff;
+    padding: 20px; /* Dodano wypełnienie dla lepszego wyglądu */
+}
+
+.wynalazki {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #456641; /* Dodano kolor tekstu dla kontrastu */
+}
+
+.zyciorys{
+
+    display: flex;
+    align-items: center;
+}
+.zyciorys img {
+    max-width: 50%;
+    margin-right: 100px;
+}
+
+.zyciorys p {
+    flex-grow: 1; /* Rozciągaj tekst, aby zajmował dostępną przestrzeń */
+}
+
+
+.przyciete-zdjecie {
+    overflow: hidden; /* Przycina zawartość do ramki */
+    width: 100%; /* Zdjęcie wypełni całą szerokość ramki */
+}
+
+.przyciete-zdjecie img {
+    width: 100%; /* Zdjęcie wypełni całą szerokość ramki */
+    height: auto; /* Automatyczne dostosowanie wysokości zachowując proporcje */
+    display: block; /* Zabezpieczenie przed dodatkowym odstępem na dole inline-block */
+}
+
+.przyciete-zdjecie_dom {
+    overflow: hidden; /* Przycina zawartość do ramki */
+    max-width: 300px; /* Maksymalna szerokość obrazu */
+    width: 100%; /* Zdjęcie wypełni całą dostępną szerokość */
 }
